@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const authMiddleware = require("../middleware/authMiddleware");
+const authMiddleware = require("../Middleware/authMiddleware");
 
 router.get("/protected", authMiddleware, (req, res) => {
   try {
